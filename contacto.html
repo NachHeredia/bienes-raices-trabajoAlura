@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Bienes Raíces</title>
+</head>
+<body>
+    <header>
+        <div class="cabeceraContenedor">
+            <div class="barra-menuNosotros">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo bienes raices">
+                </a>
+                <nav class="cabecera-menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <h1 class="fw-300" style="text-align: center;">Contacto</h1>
+        <img src="img/destacada3.jpg" alt="imagen anuncio" style="width: 100%;">
+        <h1 class="fw-300" style="text-align: center;">Completá el formulario de contacto</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+
+        <form action="get">
+            
+            <fieldset>
+                <legend>Información personal</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="nombre" required placeholder="Ingresá tu nombre">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required placeholder="Ingresá tu correo electrónico" >
+                    
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="tel" id="telefono" required placeholder="Ingresá tu número">
+                    
+                    <label for="text">Mensaje:</label>
+                    <textarea name="mensaje" id="#" placeholder="Ingresá tu mensaje acá"></textarea>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+                    <label for="compra-venta">¿Vende o compra?</label>
+                    <select id="opciones">
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="">Comprar</option>
+                        <option value="">Vender</option>
+                    </select>
+
+                    <label for="presupuesto">Presupuesto:</label>
+                    <input type="number" name="presupuesto" id="presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría ser contactadx?</legend>
+                
+                <label for="tipo-contacto">Teléfono</label>
+                <input type="radio" name="contacto" id="telefono" value="telefono">
+                <label for="tipo-contacto">Correo</label>
+                <input type="radio" name="contacto" value="correo" id="correo">
+
+                <h4>Sí eligió "Teléfono", indique fecha y horario:</h4>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                <label for="hora">Horario</label>
+                <input type="time" id="hora">
+
+            </fieldset>
+
+            <input type="submit" class="boton boton-naranja">
+
+
+            
+            
+        </form>
+    </main>
+
+
+    <footer class="index-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <div class="contenedor-navegacion">
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            
+            <p>Todos los derechos reservados &#169;</p>
+        </div>
+    </footer>
+</body>
+</html>
